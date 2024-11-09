@@ -1,0 +1,12 @@
+[package]
+name = "blog_os"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+
+[profile.dev]
+panic = "abort" # 在开发模式下，禁用panic时栈展开
+
+[profile.release]
+panic = "abort" # 在发布模式下，禁用panic时栈展开
